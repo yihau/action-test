@@ -1,20 +1,14 @@
-name: gh-release
+name: ya
 
 on:
-  pull_request:
+  push:
     branches:
       - main
+
 
 jobs:
   main:
     runs-on: ubuntu-latest
     steps:
-      - run: dd if=/dev/zero bs=1024k count=100 of=100m.dmg
-      - run: dd if=/dev/zero bs=1024k count=400 of=200m.dmg
-      - name: RRRRRRRR
-        uses: softprops/action-gh-release@v1
-        with:
-          tag_name: fake-release
-          draft: true
-          files: |
-            *.dmg 
+      - run: |
+          echo "fire"
