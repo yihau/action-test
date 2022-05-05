@@ -16,6 +16,6 @@ jobs:
         with:
           tag_name: fake-release
           draft: true
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.YIHAU }}
           files: |
             *.dmg
